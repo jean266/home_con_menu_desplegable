@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="build/img/favicon-32x32.png">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="build/css/app.css" as="style">
+  <link rel="stylesheet" href="build/css/app.css">
+</head>
+
+<body>
+
+  <header class="header">
+
+    <div class="contenedor_navegacion">
+      <div class="logo">
+        <a href="/index.html">
+          <img src="build/img/logo.svg" alt="logo">
+        </a>
+      </div>
+
+      <div class="menu_mobil ocultar">
+        <img id="btn_mobil-abrir" src="build/img/icon-menu.svg" alt="icono menu">
+
+        <div id="menu_mobil" class="contenedor_mobil ocultar">
+
+          <div class="content_nav">
+
+            <nav class="navegacion">
+
+              <img id="btn_mobil-cerrar" class="icono_cerrar" src="build/img/icon-close-menu.svg"
+                alt="icono menu cerrar">
+
+              <div class="contenedor_menu">
+
+                <div id="btn_factures-mobil" class="menu_boton">
+                  <p>Features</p>
+                  <img src="build/img/icon-arrow-down.svg" alt="icono flecha">
+                </div>
+                
+                <div id="menu_factures-mobil" class="menu_factures ocultar">
+
+                  <div class="menu_opcion">
+                    <img src="build/img/icon-todo.svg" alt="icono todo">
+                    <p>Todo List</p>
+                  </div>
+
+                  <div class="menu_opcion">
+                    <img src="build/img/icon-calendar.svg" alt="icono calendario">
+                    <p>Calendar</p>
+                  </div>
+
+                  <div class="menu_opcion">
+                    <img src="build/img/icon-reminders.svg" alt="icono arbol">
+                    <p>Remiders</p>
+                  </div>
+
+                  <div class="menu_opcion">
+                    <img src="build/img/icon-planning.svg" alt="icono planes">
+                    <p>Planning</p>
+                  </div>
+
+                </div> <!-- .menu_factures -->
+              </div> <!-- .contenedor_menu -->
+
+              <div class="contenedor_menu">
+
+                <div id="btn_company-mobil" class="menu_boton">
+                  <p>Company</p>
+                  <img src="build/img/icon-arrow-down.svg" alt="icono flecha">
+                </div>
+
+                <div id="menu_company-mobil" class="menu_company ocultar">
+
+                  <p>History</p>
+                  <p>Our Team</p>
+                  <p>Blog</p>
+
+                </div> <!-- .menu_company -->
+
+              </div> <!-- .contenedor_menu -->
+
+              <div>
+                <a href="#">Careers</a>
+              </div>
+              <div>
+                <a href="#">About</a>
+              </div>
+            </nav>
+
+            <div class="cuenta">
+              <a href="#">Login</a>
+              <a href="#">Register</a>
+            </div>
+          </div> <!-- .contenedor_navegacion -->
+        </div>
+
+      </div> <!-- .menu_mobil -->
+
+      <div id="menu_desktop" class="menu_desktop ocultar">
+        <nav class="navegacion">
+
+          <div id="btn_factures-desktop" class="menu_boton">
+            <p>Features</p>
+            <img src="build/img/icon-arrow-down.svg" alt="icono flecha">
+          </div>
+          
+          <div id="menu_factures-desktop" class="menu_factures-desktop ocultar">
+
+            <div class="menu_opcion">
+              <img src="build/img/icon-todo.svg" alt="icono todo">
+              <p>Todo List</p>
+            </div>
+
+            <div class="menu_opcion">
+              <img src="build/img/icon-calendar.svg" alt="icono calendario">
+              <p>Calendar</p>
+            </div>
+
+            <div class="menu_opcion">
+              <img src="build/img/icon-reminders.svg" alt="icono arbol">
+              <p>Remiders</p>
+            </div>
+
+            <div class="menu_opcion">
+              <img src="build/img/icon-planning.svg" alt="icono planes">
+              <p>Planning</p>
+            </div>
+
+          </div> <!-- .menu_factures -->
+
+          <div id="btn_company-desktop" class="menu_boton">
+            <p>Company</p>
+            <img src="build/img/icon-arrow-down.svg" alt="icono flecha">
+          </div>
+
+          <div id="menu_company-desktop" class="menu_company-desktop ocultar">
+
+            <p>History</p>
+            <p>Our Team</p>
+            <p>Blog</p>
+
+          </div> <!-- .menu_company -->
+
+          <div>
+            <a href="#">Careers</a>
+          </div>
+
+          <div>
+            <a href="#">About</a>
+          </div>
+        </nav>
+
+        <div class="cuenta">
+          <a href="#">Login</a>
+          <a href="#">Register</a>
+        </div>
+      </div> <!-- .menu_desktop -->
+
+    </div> <!-- .contenedor_navegacion -->
+
+  </header>
+
+  <main class="contenedor">
+
+    <div class="imagen_hero">
+      <picture>
+        <source srcset="build/img/image-hero-mobile.png" type="image/png" media="(max-width:  1024px)">
+        <source srcset="build/img/image-hero-desktop.png" type="image/png" media="(min-width:  1024px)">
+        <img src="build/img/image-hero-mobile.png" alt="Imagen hero">
+      </picture>
+    </div>
+
+    <div class="contenedor_contenido">
+
+      <div class="contenido">
+        <div class="info_contenido">
+          <h1 class="contenido_titulo">Make remote work</h1>
+
+          <p class="contenido_descripcion">Get your team in sync, no matter your location. Streamline processes, create
+            team rituals, and watch productivity soar.</p>
+
+
+          <div class="contenedor_boton">
+            <div class="boton">Learn more</div>
+          </div>
+        </div>
+
+        <div class="contenedor_logos">
+
+          <div class="logos">
+            <img src="build/img/client-databiz.svg" alt="logo databiz">
+          </div>
+
+          <div class="logos">
+            <img src="build/img/client-audiophile.svg" alt="logo audiophile">
+          </div>
+
+          <div class="logos">
+            <img src="build/img/client-meet.svg" alt="logo meet">
+          </div>
+
+          <div class="logos">
+            <img src="build/img/client-maker.svg" alt="logo maker">
+          </div>
+
+        </div> <!-- .contenedor_logos -->
+
+      </div> <!-- .contenido -->
+
+  </main> <!-- .contenedor -->
+
+  <script src="build/js/app.js"></script>
+</body>
+
+</html>
