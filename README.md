@@ -37,8 +37,8 @@ Los usuarios deben ser capaces de:
 
 ### Enlaces
 
-- URL de la solución: [Repositorio en GitHub]()
-- URL del sitio en vivo: [Sitio en Netlify]()
+- URL de la solución: [Repositorio en GitHub](https://github.com/jean266/home_con_menu_desplegable.git)
+- URL del sitio en vivo: [Sitio en Netlify](https://astounding-mousse-2708ad.netlify.app/)
 
 ## Mi proceso
 
